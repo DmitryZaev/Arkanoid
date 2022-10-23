@@ -472,6 +472,8 @@ class ViewController: UIViewController {
                                                          height: board.size.height)
             self?.mainView.coverView.frame.size = (self?.mainView.boardView.frame.size)!
         }
+        mainView.boardView.center.x = mainView.center.x
+        mainView.coverView.center.x = mainView.boardView.bounds.midX
         mainView.mainBallView.center = mainView.boardView.center
         mainView.mainBallView.center.y -= mainView.mainBallView.bounds.height / 2 + mainView.boardView.bounds.height / 2
         
